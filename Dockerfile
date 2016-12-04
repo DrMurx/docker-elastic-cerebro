@@ -14,5 +14,5 @@ ENV ELASTICSEARCH_HOST=http://localhost:9200
 
 EXPOSE 9000
 
-CMD ["/bin/sh", "-c", "sed -i 's#http://localhost:9200#'$ELASTICSEARCH_HOST'#g' conf/application.conf && bin/cerebro"]
+CMD ["/bin/sh", "-c", "sed -i 's#http://localhost:9200#'$ELASTICSEARCH_HOST'#g' conf/application.conf && bin/cerebro -Dpidfile.path=/dev/null"]
 
