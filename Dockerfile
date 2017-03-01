@@ -10,6 +10,8 @@ RUN wget "https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSI
 
 WORKDIR cerebro
 
+COPY application.conf conf/
+
 ENV ELASTICSEARCH_HOST=http://localhost:9200
 
 EXPOSE 9000
