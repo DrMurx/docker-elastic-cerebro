@@ -2,7 +2,7 @@ FROM ibmjava:8-jre
 
 MAINTAINER Ludek Vesely <ludek.vesely@email.com>
 
-ENV CEREBRO_VERSION=0.4.0
+ENV CEREBRO_VERSION=0.5.1
 
 RUN wget "https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz" && \
 	tar xvfz cerebro-${CEREBRO_VERSION}.tgz -C ./ && \
